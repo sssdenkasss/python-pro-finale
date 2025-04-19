@@ -10,7 +10,7 @@ def index():
     contacts = data[data["category"] == "contacts"][["text", "link"]].replace({np.nan:None}).values
     skills = data[data["category"] == "skills"]["text"].values
     projects =  data[data["category"] == "projects"][["text", "link"]].replace({np.nan:None}).values
-    education = data[data["category"] == "education"]["text"].valuesdata[data["category"] == "name"]["text"].values
+    education = data[data["category"] == "education"]["text"].values
     achievements = data[data["category"] == "achievements"]["text"].values
     facts = data[data["category"] == "facts"]["text"].values
 

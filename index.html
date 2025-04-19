@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Special+Gothic+Expanded+One&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <title>Лучко Денис Резюме</title>
+    <link rel="stylesheet" href ="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+<div class="main">
+<h1>{{name}}</h1>
+<h3>{{position}}</h3>
+<h2>Contacts</h2>
+<ul>
+    {% for contact, link in contacts %}
+        {% if link %}
+            <li><a href={{"link"}}>{{contact}}</li>
+        {% endif %}
+    {% endfor %}
+</ul>
+<h2>Summary</h2>
+<p>{{sumary}}</p>
+<h2>Skills</h2>
+<table border = "1">
+    {% for i in range(0, skills|length, 4)%}
+        <tr>
+            {% for j in range(4) %}
+                {% if i + j < skills|length %}
+                    <td>{{skills[i+j]}}</td>
+                {% else %}
+                    <td></td>
+                {% endif %}
+            {% endfor %}
+        </tr>
+    {% endfor %}
+</table>
+<h2>Projects</h2>
+{% for project, link in projects %}
+    <a href={{link}}>{{project}}</a>
+{% endfor %}
+</div>
+</body>
+</html>
