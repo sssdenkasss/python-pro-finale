@@ -1,12 +1,12 @@
 id,text,link,category
-1,Денис Лучко,,name
-2,3D Developer,,position
+1,Denys Luchko,,name
+2,3D Game Developer,,position
 3,d_work@gmail.com,,contacts
 4,380988766789,,contacts
 5,"Полтава, Україна, також віддалено",,contacts
-6,Телеграмм,https://t.me/sssdankas,contacts
+6,telegram,https://t.me/sssdankas,contacts
 7,facebook,https://www.facebook.com/denis.luchko.52,contacts
-8,I am an aspiring Data Analyst with a strong commitment to continuous skill enhancement and growth in the data field.,,summery
+8,I am an aspiring Data Analyst with a strong commitment to continuous skill enhancement and growth in the data field.,,summary
 9,Python3,,skills
 10,OOP,,skills
 11,Kivy,,skills
@@ -22,20 +22,8 @@ id,text,link,category
 21,Flask,,skills
 22,Test Ruffier,https://github.com/sssdenkasss/ruffier-2.git,projects
 23,minecraft,https://github.com/sssdenkasss/luchik_mainkrafter,projects
+28,shooter,https://github.com/sssdenkasss/shooter-the-end,projects
 24,I am finishing 8 years old of Poltava secondary school N 28.,,education
 25,        Python Start Course - Logika (2022 - 2024),,education
 26,I took 3rd place in the City Python Olympiad,,education
-27,Python Pro Course - Logika(2024-2025),,achi
-28,,,
-29,,,
-30,,,
-31,,,
-32,,,
-33,,,
-34,,,
-35,,,
-36,,,
-37,,,
-38,,,
-39,,,
-40,,,
+27,Python Pro Course - Logika(2024-2025),,education

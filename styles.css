@@ -1,18 +1,27 @@
 body {
-    background-image: linear-gradient(0, hsla(144,63%,46%,0.5) 0%, hsla(144,63%,46%,0.5) 12.5%,hsla(189,63%,46%,0.5) 12.5%, hsla(189,63%,46%,0.5) 25%,hsla(234,63%,46%,0.5) 25%, hsla(234,63%,46%,0.5) 37.5%,hsla(279,63%,46%,0.5) 37.5%, hsla(279,63%,46%,0.5) 50%,hsla(324,63%,46%,0.5) 50%, hsla(324,63%,46%,0.5) 62.5%,hsla(9,63%,46%,0.5) 62.5%, hsla(9,63%,46%,0.5) 75%,hsla(54,63%,46%,0.5) 75%, hsla(54,63%,46%,0.5) 87.5%,hsla(99,63%,46%,0.5) 87.5%, hsla(99,63%,46%,0.5) 100%),linear-gradient(90deg, hsl(173,87%,60%) 0%, hsl(173,87%,60%) 12.5%,hsl(218,87%,60%) 12.5%, hsl(218,87%,60%) 25%,hsl(263,87%,60%) 25%, hsl(263,87%,60%) 37.5%,hsl(308,87%,60%) 37.5%, hsl(308,87%,60%) 50%,hsl(353,87%,60%) 50%, hsl(353,87%,60%) 62.5%,hsl(38,87%,60%) 62.5%, hsl(38,87%,60%) 75%,hsl(83,87%,60%) 75%, hsl(83,87%,60%) 87.5%,hsl(128,87%,60%) 87.5%, hsl(128,87%,60%) 100%);
-    color #274708;
+    background-image: linear-gradient(90deg, rgb(178,252,251),rgb(0,120,196));
+    margin:0;
+    font-size: 20px;
 }
 
 .main{
-    width: 50%;
-    margin: auto;
-    backhround-color: #FAFFAB;
+    box-shadow:0 8px 16px rgba(0, 0, 0, 0.5);
+    align-items: center;
+    justify-content: center;
+    display:flex;
+    width: 100%;
+    height: 300px;
+    margin: 0 auto;
+    background-image: url('https://th.bing.com/th/id/R.7b7b10e9e07b67f2d652d26400e48d06?rik=gNJW%2Ft3ro16mwA&riu=http%3A%2F%2Fcdn.wallpapersafari.com%2F56%2F15%2FILqlJK.jpg&ehk=cshjBo1jy98kIU2u9%2BDqZGuQjpUPsLr7kOqmHbfb2BU%3D&risl=&pid=ImgRaw&r=0');
     padding:20px;
-    border: 10px solid #274708;
-    border-raduis: 20px;
+
 }
 h1, h2, h3{
     font-family: "Special Gothic Expanded One", sans-serif;
     font-weight: 400;
     font-style: norm;
+}
+.main img {
+height: 90%;
+margin-left: 30px;
 }

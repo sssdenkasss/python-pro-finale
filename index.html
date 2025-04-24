@@ -10,18 +10,22 @@
 </head>
 <body>
 <div class="main">
-<h1>{{name}}</h1>
-<h3>{{position}}</h3>
+     <div>
+    <h1>{{name}}</h1>
+    <h3>{{position}}</h3>
+    </div>
+    <img src="{{ url_for('static', filename='photo_2025-04-24_20-39-39.jpg') }}">
+</div>
 <h2>Contacts</h2>
 <ul>
     {% for contact, link in contacts %}
         {% if link %}
-            <li><a href={{"link"}}>{{contact}}</li>
+            <li><a href={{link}}>{{contact}}</a></li>
         {% endif %}
     {% endfor %}
 </ul>
 <h2>Summary</h2>
-<p>{{sumary}}</p>
+<p>{{summary}}</p>
 <h2>Skills</h2>
 <table border = "1">
     {% for i in range(0, skills|length, 4)%}
@@ -40,6 +44,23 @@
 {% for project, link in projects %}
     <a href={{link}}>{{project}}</a>
 {% endfor %}
-</div>
+    <h2>Education</h2>
+    <ul>
+        {% for e in education%}
+            <li>{{e}}</li>
+        {%endfor%}
+    </ul>
+
+    <h2>Achievements</h2>
+        {% for achievement in achievements%}
+            <p>{{achievement}}</p>
+        {%endfor%}
+
+    <h2>Facts</h2>
+        {% for fact in facts%}
+            <p>{{fact}}</p>
+        {%endfor%}
+
+
 </body>
 </html>
